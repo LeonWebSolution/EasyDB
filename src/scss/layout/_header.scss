@@ -1,0 +1,122 @@
+// Header
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 777;
+    &__top{
+        padding: 0.9rem 1.1rem;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        color: $white;
+        background-color: $primary;
+        button{
+            color: $btn;
+        }
+    }
+    .container{
+        padding-top: 1.6rem;
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+    .logo{
+        img{
+            width: 10.9rem;
+            height: 5.4rem;
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-right: 17.5rem;
+    }
+    .nav-link{
+        color: #000;
+        transition: all 0.3s;
+        &:hover{
+            color: $hover;
+            transition: all 0.3s;
+        }
+    }
+    &__actions{
+        display: flex;
+        gap: 3rem;
+    }
+    &__btn{
+        padding: 1.3rem 2.5rem 1.4rem;
+        background-color: $btn;
+        border-radius: 4.1rem;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+    &__phone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1.2rem;
+        a{
+            transition: all 0.3s;
+            color: #000;
+            &:hover{
+                color: $hover;
+                transition: all 0.3s;
+            }
+        }
+    }
+    &__call{
+        color: $text_light;
+        transition: all 0.3s;
+        &:hover{
+            color: $hover;
+            transition: all 0.3s;
+        }
+    }
+    &__btns-telegram{
+        width: 4.4rem;
+        height: 4.4rem;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 2rem;
+        transition: all 0.3s;
+        svg{
+            width: 2rem;
+            height: 2rem;;
+        }
+        &:hover{
+            background: $hover;
+            transition: all 0.3s;
+        }
+    }
+    &__btns-account{
+        width: 4.4rem;
+        height: 4.4rem;
+        border: 0.1rem solid $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.3s;
+        svg{
+            width: 2rem;
+            height: 2rem;;
+        }
+        &:hover{
+            background: $hover;
+            transition: all 0.3s;
+            svg path{
+                stroke: $white; 
+                transition: all 0.3s;
+            }
+        }
+    }
+}
