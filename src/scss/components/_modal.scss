@@ -73,6 +73,10 @@
             color: $primary;
             text-decoration-line: underline;
             text-underline-offset: 0.5rem;
+            &:hover{
+                color: $primary;
+                transition: all 0.3s;
+            }
         }
     }
 }
