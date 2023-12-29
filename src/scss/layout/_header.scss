@@ -34,15 +34,16 @@
         align-items: center;
         gap: 3rem;
         margin-right: 17.5rem;
-    }
-    .nav-link{
-        color: #000;
-        transition: all 0.3s;
-        &:hover{
-            color: $hover;
+        &__link{
+            color: #000;
             transition: all 0.3s;
+            &:hover{
+                color: $hover;
+                transition: all 0.3s;
+            }
         }
     }
+    
     &__actions{
         display: flex;
         gap: 3rem;
