@@ -18,6 +18,11 @@
         width: 82rem;
         position: relative;
         border-radius: 2rem;
+
+        @media (max-width: 962px) {
+            width: 33rem;
+            padding: 3rem 2rem;
+        }
     }
 
     &__close{
@@ -36,12 +41,23 @@
         margin-bottom: 0.8rem;
         color: $text;
         text-align: center;
+
+        @media (max-width: 962px) {
+            text-align: left;
+            font-size: 2.6rem;
+        }
     }
 
     &__suptitle{
         color: $text;
         margin-bottom: 3rem;
         text-align: center;
+
+        @media (max-width: 962px) {
+            text-align: left;
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__form{
@@ -56,6 +72,11 @@
         padding: 2rem 0 2.2rem;
         border-radius: 4.1rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 962px) {
+            margin-bottom: 0;
+        }
+        
     }
 
     &__form-input{
@@ -79,11 +100,18 @@
     &__form-descr{
         text-align: center;
         width: 100%;
+
+        @media (max-width: 962px) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
         a{
             display: inline;
             color: $primary;
             text-decoration-line: underline;
             text-underline-offset: 0.5rem;
+
             &:hover{
                 color: $primary;
                 transition: all 0.3s;
@@ -105,6 +133,20 @@
         margin: auto;
     }
 
+    .modal__title{
+        @media (max-width: 962px) {
+            text-align: center;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    .modal__suptitle{
+        @media (max-width: 962px) {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+    }
+
     .modal__error{
        display: none;
     }
@@ -115,6 +157,11 @@
         margin-bottom: 3rem;
         margin: 0 auto;
         display: block;
+        @media (max-width: 962px) {
+            text-align: left;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
     }
 
     .modal__successfully-btn{
@@ -123,6 +170,10 @@
         font-weight: 600;
         margin: auto;
         display: block;
+
+        @media (max-width: 962px) {
+            width: 100%;
+        }
     }
 
 }
@@ -133,6 +184,20 @@
         display: none;
     }
 
+    .modal__title{
+        @media (max-width: 962px) {
+            text-align: center;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    .modal__suptitle{
+        @media (max-width: 962px) {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+    }
+    
     .modal__successfully{
         display: none;
     }
@@ -147,6 +212,9 @@
         margin-bottom: 3rem;
         margin: 0 auto;
         display: block;
+        @media (max-width: 962px) {
+            margin-bottom: 3rem;
+        }
     }
 
     .modal__successfully-btn{
@@ -155,6 +223,9 @@
         font-weight: 600;
         margin: auto;
         display: block;
+        @media (max-width: 962px) {
+            width: 100%;
+        }
     }
 }
 

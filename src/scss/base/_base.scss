@@ -20,3 +20,18 @@ body{
 }
 
 
+
+@media (max-width: 962px){
+    html{
+        font-size: calc(100vw / 360 * 7);
+    }
+    section{
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: calc(100vw / 360 * 10);
+    }
+}
