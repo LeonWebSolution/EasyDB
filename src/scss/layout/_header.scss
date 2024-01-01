@@ -9,22 +9,22 @@
     transition: all 0.5s;
 
     &.transform{
-        position: absolute;
-        transform: translateY(-50%);
+        position: fixed;
+        transform: translateY(-110%);
+        transition: all 0.7s;
+    }
+    
+    &.fixed{
+        top: 0;
+        position: fixed;
+        transform: translateY(0%);
         transition: all 0.5s;
+        background-color: #fff;
+        padding-bottom: 2rem;
+        box-shadow: 0rem 1.5rem 2.3rem 0rem rgba(10, 9, 11, 0.04);
 
-        &.fixed{
-            top: 0;
-            position: fixed;
-            transform: translateY(0%);
-            transition: all 0.5s;
-            background-color: #fff;
-            padding-bottom: 2rem;
-            box-shadow: 0rem 1.5rem 2.3rem 0rem rgba(10, 9, 11, 0.04);
-
-            .header__top{
-                display: none;
-            }
+        .header__top{
+            display: none;
         }
     }
 
