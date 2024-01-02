@@ -7,10 +7,12 @@ export class Menu {
 
           hamburger.addEventListener('click', function () {
               headerMenu.classList.add('active');
+              document.body.style.overflow = 'hidden'; // Add this line to hide body overflow
           });
 
           hamburgerClose.addEventListener('click', function () {
               headerMenu.classList.remove('active');
+              document.body.style.overflow = ''; // Add this line to restore body overflow
           });
 
           // Добавляем обработчик события для элементов с классом 'nav-link'
@@ -21,6 +23,7 @@ export class Menu {
                   var closestHeaderMenu = navLink.closest('.header__menu');
                   if (closestHeaderMenu) {
                       closestHeaderMenu.classList.remove('active');
+                      document.body.style.overflow = ''; // Add this line to restore body overflow
                   }
               });
           });
