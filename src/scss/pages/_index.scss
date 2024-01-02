@@ -275,26 +275,26 @@
         justify-content: space-between;
         padding: 1rem 1rem 1rem 5.5rem;
         display: none;
-        &:nth-child(2){
-            .cases__item{
-                border-radius: 40rem;
-            }
-            .cases__number{
-                border-radius: 50%;
-            }
-            .cases__item.active{
-                .cases__number{
-                    color: $text;
-                    background-color: #fff;
-                }
-            }
-            .cases__item{
-                .cases__number{
-                    background-color: transparent;
-                    border: 0.1rem solid rgba(0, 0, 0, 0.20);
-                }
-            }
-        }
+        // &:nth-child(2){
+        //     .cases__item{
+        //         border-radius: 40rem;
+        //     }
+        //     .cases__number{
+        //         border-radius: 50%;
+        //     }
+        //     .cases__item.active{
+        //         .cases__number{
+        //             color: $text;
+        //             background-color: #fff;
+        //         }
+        //     }
+        //     .cases__item{
+        //         .cases__number{
+        //             background-color: transparent;
+        //             border: 0.1rem solid rgba(0, 0, 0, 0.20);
+        //         }
+        //     }
+        // }
         @media (max-width: 962px){
            flex-direction: column;
            padding: 0.5rem;
