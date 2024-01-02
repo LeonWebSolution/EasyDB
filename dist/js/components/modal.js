@@ -20,5 +20,19 @@ export class Modal {
             }
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var goTopButton = document.querySelector('.footer__go-top');
+  
+        goTopButton.addEventListener('click', function() {
+          // Используем smooth behavior для плавного скроллинга
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+
     }
   }
