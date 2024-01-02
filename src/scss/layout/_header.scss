@@ -26,6 +26,12 @@
         .header__top{
             display: none;
         }
+        @media (max-width: 962px){
+            padding: 0.7rem;
+            .container{
+                padding: 0 1.5rem;
+            }
+        }
     }
 
     &__top{
