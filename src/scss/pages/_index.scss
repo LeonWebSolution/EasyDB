@@ -1926,3 +1926,8 @@
         font-weight: 600;
     }
 }
+
+.calc__form input[type="range"]{
+    position: relative;
+    z-index: 1;
+}
