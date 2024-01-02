@@ -14,7 +14,18 @@ const MaskInstance = new Mask();
 const FixedInstance = new Fixed();
 const MenuInstance = new Menu();
 
+function validateForm() {
+    var emailInput = document.querySelector('.newsletter__form-input');
+    var errorTxt = document.querySelector('.error-txt');
 
+    if (!emailInput.value.trim()) {
+        errorTxt.classList.add('active');
+    } else {
+        errorTxt.classList.remove('active');
+        // Здесь вы можете добавить свой код для обработки формы
+        console.log('Form validation successful');
+    }
+}
 
 
 // export class Component1 {
