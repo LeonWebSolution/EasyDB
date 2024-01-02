@@ -14,7 +14,8 @@ export class Accordion {
                 closeBtn.classList.toggle('active');
             });
     
-            closeBtn.addEventListener('click', function () {
+            closeBtn.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent the click event from propagating to the questionTop
                 content.style.maxHeight = 0;
                 content.classList.remove('visible');
                 closeBtn.classList.remove('active');
@@ -28,6 +29,8 @@ export class Accordion {
             }
         });
     });
+    
+    
 
         document.addEventListener('DOMContentLoaded', function() {
             const itemTop = document.querySelector('.aditions__item-top');

@@ -1880,8 +1880,9 @@
         position: absolute;
         pointer-events: none;
         top: 1rem;
-        right: 2rem;
+        right: 1rem;
         @media (max-width: 962px){
+            right: 2rem;
             top: 50%;
             transform: translateY(-50%);
             right: 0rem;
