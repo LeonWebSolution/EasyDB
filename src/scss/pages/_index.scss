@@ -1752,6 +1752,12 @@
         position: relative;
     }
 
+    &__question-title{
+        @media (max-width: 962px){
+            max-width: 26.2rem;
+        }
+    }
+
     &__cloud1{
         position: absolute;
         left: 40.9rem;
@@ -1864,13 +1870,22 @@
         align-items: center;
         justify-content: space-between;
         gap: 5rem;
+        position: relative;
         @media (max-width: 962px){
             gap: 1.5rem;
         }
     }
 
     .close{
-
+        position: absolute;
+        pointer-events: none;
+        top: 1rem;
+        right: 2rem;
+        @media (max-width: 962px){
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0rem;
+        }
         span{
             display: block;
             min-width: 2.3rem;

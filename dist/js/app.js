@@ -14,18 +14,29 @@ const MaskInstance = new Mask();
 const FixedInstance = new Fixed();
 const MenuInstance = new Menu();
 
-function validateForm() {
-    var emailInput = document.querySelector('.newsletter__form-input');
-    var errorTxt = document.querySelector('.error-txt');
-
-    if (!emailInput.value.trim()) {
-        errorTxt.classList.add('active');
-    } else {
-        errorTxt.classList.remove('active');
-        // Здесь вы можете добавить свой код для обработки формы
-        console.log('Form validation successful');
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector(".newsletter__form");
+    const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+  
+    form.addEventListener("submit", function (e) {
+      var hasEmptyFields = false;
+  
+      var input = form.querySelector('input[type="text"]');
+      var errorLabel = form.querySelector(".error-txt");
+  
+      if (input && errorLabel) {
+        if (!EMAIL_REGEXP.test(input.value)) {
+          errorLabel.style.display = 'block';
+          hasEmptyFields = true;
+        } else {
+          errorLabel.style.display = 'none';
+        }
+      }
+      if (hasEmptyFields) {
+        e.preventDefault();
+      }
+    });
+  });
 
 
 // export class Component1 {
